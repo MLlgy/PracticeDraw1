@@ -9,6 +9,9 @@ import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.View;
 
+/**
+ * android直方图 http://blog.csdn.net/clpliji/article/details/7998975
+ */
 public class Practice10HistogramView extends View {
 
     private Path mPath = new Path();
