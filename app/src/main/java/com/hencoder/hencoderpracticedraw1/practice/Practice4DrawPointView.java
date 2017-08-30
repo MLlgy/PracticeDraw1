@@ -10,6 +10,7 @@ import android.view.View;
 public class Practice4DrawPointView extends View {
 
     private Paint mPaint = new Paint();
+    float[] points = {0, 0, 50, 50, 150, 100, 100, 50, 200, 200, 150, 50, 150, 100};
 
 
     public Practice4DrawPointView(Context context) {
@@ -29,8 +30,13 @@ public class Practice4DrawPointView extends View {
         super.onDraw(canvas);
         mPaint.setStrokeWidth(50);
         mPaint.setStrokeCap(Paint.Cap.ROUND);
-        canvas.drawPoint(50, 50, mPaint);
+        canvas.drawPoint(500, 500, mPaint);
+
         mPaint.setStrokeCap(Paint.Cap.SQUARE);
+        canvas.drawPoint(600, 600, mPaint);
+        mPaint.setStrokeWidth(50);
+        mPaint.setStrokeCap(Paint.Cap.ROUND);
+        canvas.drawPoints(points, 2, 8, mPaint);
 
 
 //        练习内容：使用 canvas.drawPoint() 方法画点
